@@ -12,6 +12,7 @@ function App() {
       <BrowserRouter>
 
         <ThemeToggle />
+        
         <Routes>
 
           <Route index element={ <Home />} />

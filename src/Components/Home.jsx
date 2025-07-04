@@ -1,5 +1,6 @@
 import React from 'react'
 import StarBackground  from "./StarBackground"
+import NavBar from './NavBar'
 
 
 const Home = () => {
@@ -10,9 +11,8 @@ const Home = () => {
       {/* Background Effects */}
       <StarBackground />
 
-       
-
       {/* NavBar */}
+      < NavBar />
 
       {/* Main Content */}
 

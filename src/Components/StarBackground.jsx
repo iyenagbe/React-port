@@ -3,9 +3,19 @@ import React, { useEffect, useState } from 'react'
 const StarBackground = () => { 
 
     const [stars, setStar] = useState([]);
+    const [meteors, setMeteors] = useState([]);
 
     useEffect(() => {
         generateStars();
+        generateMeteors();
+
+        const handleResize = () => {
+            generateStars();
+        }
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
     }, []);
 
     const generateStars = () => {
@@ -24,6 +34,23 @@ const StarBackground = () => {
         }
         setStar(newStars);
     };
+        // generateMeteors
+    const generateMeteors = () => {
+        const numberOfMeteors = 3
+
+        const newMeteors = [];
+        for (let i = 0; i < numberOfMeteors; i++) {
+            newMeteors.push({
+                id: i,
+                size: Math.random() * 2 + 1,
+                x: Math.random() * 100 + window.innerWidth,
+                y: Math.random() * 200 + window.innerHeight,
+                opacity: Math.random() * 15,
+                animationDuration: Math.random() * 3 + 3,
+            });
+        }
+        setMeteors(newMeteors);
+    }
 
     return (
         <div className='fixed inset-0 overflow-hidden pointer-events-none z-0'>
@@ -39,6 +66,24 @@ const StarBackground = () => {
                         top: star.y + 'px',
                         opacity: star.opacity,
                         animationDuration: star.animationDuration + 's',
+                        backgroundColor: 'white',
+                        borderRadius: '50%',
+                    }}
+                />
+            ))}
+
+            {meteors.map((meteor) => (
+                <div
+                    key={meteor.id}
+                    className='meteor animate-meteor'
+                    style={{
+                        position: 'absolute',
+                        width: meteor.size + 'px',
+                        height: meteor.size + 'px',
+                        left: meteor.x + 'px',
+                        top: meteor.y + 'px',
+                        animationDelay: meteor.delay,
+                        animationDuration: meteor.animationDuration + 's',
                         backgroundColor: 'white',
                         borderRadius: '50%',
                     }}
