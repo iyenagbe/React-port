@@ -1,6 +1,10 @@
 import React from 'react'
 import StarBackground  from "./StarBackground"
 import NavBar from './NavBar'
+import HeroSection from './HeroSection'
+import AboutMe from './AboutMe'
+
+
 
 
 const Home = () => {
@@ -15,6 +19,11 @@ const Home = () => {
       < NavBar />
 
       {/* Main Content */}
+      <main>
+        <HeroSection />
+        <AboutMe />
+        {/* Add more sections like Skills, Projects, Contact, etc. */}
+      </main>
 
       {/* Footer */}
     </div>

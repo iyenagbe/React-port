@@ -1,0 +1,37 @@
+import React from 'react'
+import { ArrowDown } from 'lucide-react'
+
+const HeroSection = () => {
+  return (
+    <section id='hero' className='relative flex flex-col min-h-screen items-center justify-center px-4'>
+        <div className='container max-w-3xl ma-auto text-center'>
+            <div className='space-y-6'>
+                <h1 className='text-4xl md:text-6xl font-bold tracking-tight'>
+                    <span className='opacity-0 animate-fade-in'>Hi, I'm</span>
+                    <span className='ml-2 opacity-0 animate-fade-in-delay-1 bg-gradient-to-r from-pink-900 to-purple-900 text-transparent bg-clip-text'> Iyenagbe. O.</span>
+                    <span className='ml-2 opacity-0 animate-fade-in-delay-2 bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text'> Raymond</span>
+                </h1>
+
+                <p className='text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3 '>
+                     I’m a Full Stack Developer and BlockChain enthusiast dedicated to crafting clean,
+                    interactive, and impactful  <br />digital products. I blend modern design principles with cutting-edge
+                    web technologies to create <br /> seamlessuser experiences that not only look beautiful
+                    but also feel intuitive and engaging.
+                </p>
+                <div className=' pt-4 opacity-0 animate-fade-in delay-4'>
+                    <a href='#projects' className='page-button'>
+                        View My work
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div className='absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce'>
+            <span className='text-sm text-muted-foreground mb-2'>Scroll</span>
+            <ArrowDown className='h-5 w-5 text-primary' />
+        </div>
+
+    </section>
+  )
+}
+
+export default HeroSection
