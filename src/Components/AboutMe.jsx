@@ -8,6 +8,18 @@ const AboutMe = () => {
                 About <span className='text-primary'>Me</span>
             </h2>
 
+            <div className='grid grid-cols-1 mg:grid-cols-2 gap-12 items-center'>
+                {/* first */}
+                <div className='space-y-6'>
+                    <h3>Passionate Web Developer & Digital Creator</h3>
+
+                </div>
+                {/* second */}
+                <div>
+
+                </div>
+            </div>
+
         </div>
 
     </section>
