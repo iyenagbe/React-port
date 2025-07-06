@@ -203,5 +203,13 @@
 .bg-card {
   background-color: hsl(var(--card));
 }
+:root {
+  --primary: 250 45% 55%;
+}
+
+.bg-primary {
+  background-color: hsl(var(--primary));
+}
+
 
 }
