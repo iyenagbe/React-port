@@ -13,10 +13,7 @@ const HeroSection = () => {
                 </h1>
 
                 <p className='text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3 '>
-                     I’m a Full Stack Developer and BlockChain enthusiast dedicated to crafting clean,
-                    interactive, and impactful  <br />digital products. I blend modern design principles with cutting-edge
-                    web technologies to create <br /> seamlessuser experiences that not only look beautiful
-                    but also feel intuitive and engaging.
+                     I’m a Skilled and passionate Full Stack web developer with experience <br /> in creating dynamic and responsive web applications. <br />
                 </p>
                 <div className=' pt-4 opacity-0 animate-fade-in delay-4'>
                     <a href='#projects' className='page-button'>

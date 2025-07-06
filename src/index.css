@@ -17,6 +17,8 @@
   --animate-fade-in-delay-3: fade-in 0.5s ease-out 0.2s forwards;
   --animate-fade-in-delay-4: fade-in 0.5s ease-out 0.2s forwards;
   --animate-meteor: meteor 5s ease-in-out infinite;
+
+
 }
 
 @keyframes float {
@@ -192,6 +194,14 @@
   .text-primary {
     color: var(--color-primary);
   }
+}
+
+/* :root {
+  --card: 0 0% 100%;
+} */
+
+.bg-card {
+  background-color: hsl(var(--card));
 }
 
 }

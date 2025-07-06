@@ -3,7 +3,7 @@ import StarBackground  from "./StarBackground"
 import NavBar from './NavBar'
 import HeroSection from './HeroSection'
 import AboutMe from './AboutMe'
-
+import Skills from './Skills'
 
 
 
@@ -22,7 +22,7 @@ const Home = () => {
       <main>
         <HeroSection />
         <AboutMe />
-        {/* Add more sections like Skills, Projects, Contact, etc. */}
+        <Skills />
       </main>
 
       {/* Footer */}
