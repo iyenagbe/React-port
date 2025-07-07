@@ -4,6 +4,7 @@ import NavBar from './NavBar'
 import HeroSection from './HeroSection'
 import AboutMe from './AboutMe'
 import Skills from './Skills'
+import MyProjects from './MyProjects'
 
 
 
@@ -23,6 +24,7 @@ const Home = () => {
         <HeroSection />
         <AboutMe />
         <Skills />
+        <MyProjects />
       </main>
 
       {/* Footer */}

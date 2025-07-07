@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import { cn } from '@Lib/utils'
+import React, { useState } from 'react';
+import { cn } from '@Lib/utils';
 
 const Skills = () => {
+  const [activeCategory, setActiveCategory] = useState('all');
 
-    const [activeCategory, setActiveCategory] = useState ('all')
   const skills = [
     { name: 'HTML/CSS', level: 80, category: 'Frontend' },
     { name: 'JavaScript', level: 50, category: 'Frontend' },
@@ -19,6 +19,11 @@ const Skills = () => {
 
   const categories = ['all', 'Frontend', 'Backend', 'Tools'];
 
+  // Now use the skills array
+  const filteredSkills = skills.filter(
+    (skill) => activeCategory === 'all' || skill.category === activeCategory
+  );
+
   return (
     <section id='skills' className='py-20 px-4 relative bg-secondary'>
       <div className='container mx-auto max-w-5xl'>
@@ -26,21 +31,25 @@ const Skills = () => {
           My <span className='text-primary'>Skills</span>
         </h2>
 
-        <div className='flex justify-center mb-11 flex-wrap gap-5'> 
-            {categories.map((category, index) => (
-                <button
-                key={index}
-                onClick={() => setActiveCategory(category)}
-                className={cn('px-5 py-2 rounded-full transition-colors duration-300 capitalize')}
-                >
-                {category}
-                </button>
-            ))}
-            </div>
-
+        <div className='flex justify-center mb-11 flex-wrap gap-5'>
+          {categories.map((category, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveCategory(category)}
+              className={cn(
+                'px-5 py-2 rounded-full transition-colors duration-300 capitalize',
+                activeCategory === category
+                  ? 'bg-primary text-primary-foreground'
+                  : 'bg-secondary/66 text-primary-foreground/66 hover:bg-secondary hover:text-white'
+              )}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-          {skills.map((skill, index) => (
+          {filteredSkills.map((skill, index) => (
             <div key={index} className='bg-card p-6 rounded-lg shadow-xs card-hover bg-green-500'>
               <h3 className='font-semibold text-lg mb-2'>{skill.name}</h3>
               <p className='text-muted-foreground mb-2'>{skill.level}%</p>
@@ -50,16 +59,13 @@ const Skills = () => {
                   style={{ width: `${skill.level}%` }}
                 />
               </div>
-                <div className='text-smtext-muted-foregroung'>
-
-                </div>
-
+              <div className='text-sm text-muted-foreground'></div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
