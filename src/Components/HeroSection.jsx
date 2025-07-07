@@ -4,6 +4,7 @@ import { ArrowDown } from 'lucide-react'
 const HeroSection = () => {
   return (
     <section id='hero' className='relative flex flex-col min-h-screen items-center justify-center px-4'>
+        <img src="#" alt="#" />
         <div className='container max-w-3xl ma-auto text-center'>
             <div className='space-y-6'>
                 <h1 className='text-4xl md:text-6xl font-bold tracking-tight'>

@@ -1,42 +1,44 @@
 import { ArrowRight, ExternalLink, Github } from 'lucide-react';
 import React from 'react'
 
-const MyProjects = () => {
+const Projects = () => {
   
-    const Myprojects = [
-        {
-            id: 1,
-            title: "Project One",
-            description: "A beautiful landing page with a Language Translator, using HTML/CSS and JavaScrript",
-            image: '/',
-            tags: ['HTML/CSS' 'JavaScript' 'My Weather API'];
-            demoUrl: '#',
-            githubUrl: '#'
-        },
-        {
-            id: 1,
-            title: "Project One",
-            description: "A beautiful landing page with a Language Translator, using HTML/CSS and JavaScrript",
-            image: '/',
-            tags: ['HTML/CSS' 'JavaScript' 'My Weather API'];
-            demoUrl: '#',
-            githubUrl: '#'
-        },
-        {
-            id: 1,
-            title: "Project One",
-            description: "A beautiful landing page with a Language Translator, using HTML/CSS and JavaScrript",
-            image: '/',
-            tags: ['HTML/CSS' 'JavaScript' 'My Weather API'];
-            demoUrl: '#',
-            githubUrl: '#'
-        },
-    ];
+    const projects = [
+    {
+        id: 1,
+        title: "Project One",
+        description: "A beautiful landing page with a Language Translator, using HTML/CSS and JavaScript",
+        image: '/',
+        tags: ['HTML/CSS', 'JavaScript', 'Memory API'],
+        demoUrl: '#',
+        githubUrl: '#'
+    },
+    
+    {
+        id: 3,
+        title: "Project Two",
+        description: "A fully functing weather site that tells a real-time weather update, using HTML/CSS and JavaScript.",
+        image: '/',
+        tags: ['HTML/CSS', 'JavaScript', 'My Weather API'],
+        demoUrl: '#',
+        githubUrl: '#'
+    },
+    {
+        id: 2,
+        title: "Project Three",
+        description: "A dynamic Edu website using React and Tailwind CSS.",
+        image: '/',
+        tags: ['React', 'Tailwind CSS'],
+        demoUrl: '#',
+        githubUrl: '#'
+    },
+    
+];
 
     return (
-    <section id='Projects' className='py-24 px-4 relative'>
+    <section id='projects' className='py-24 px-4 relative'>
         <div className='container mx-auto max-5xl'>
-            <h2 className='text-3xl md:text-4xl font-bold md-4 text-center'> 
+            <h2 className='text-3xl md:text-4xl font-bold mb-8 text-center'> 
                 {''}
             Featured <span className='text-primary '> Projects </span></h2>
 
@@ -45,7 +47,7 @@ const MyProjects = () => {
                 Click on the links to view the live demos or the source code on GitHub.
             </p>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
-                {Myprojects.map((project, key) => (
+                {projects.map((project, key) => (
                     <div key={project.id} className='bg-card rounded-lg shadow-xs overflow-hidden card-hover'>
 
                         <div className='h-45 overflow-hidden'>
@@ -91,7 +93,7 @@ const MyProjects = () => {
                 <div className='text-center mt-12'>
                     <a  href='https://github.com/iyenagbe' target='blank'
                     className='page-button w-fit flex items-center mx-auto gap-2'>
-                        check out my GitHub <ArrowRight size={60}/>
+                        Check out my GitHub <ArrowRight size={60}/>
                     </a>
 
                 </div>
@@ -100,4 +102,4 @@ const MyProjects = () => {
   )
 }
 
-export default MyProjects
+export default Projects
