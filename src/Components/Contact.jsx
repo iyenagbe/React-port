@@ -1,7 +1,15 @@
-import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
-import React from 'react';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import React, { useState } from 'react';
 
 const Contact = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setResult("Thank you for your message!");
+    
+  };
+
   return (
     <section id='contact' className='py-23 px-4 relative bg-secondary/40'>
       <div className='container mx-auto max-w-5xl'>
@@ -18,7 +26,7 @@ const Contact = () => {
           <div className='space-y-8'>
             <h3 className='text-2xl font-semibold mb-6'>Contact Info</h3>
 
-            <div className='space-y-6 justify-center'>
+            <div className='space-y-6'>
               <div className='flex items-start space-x-4'>
                 <div className='p-3 rounded-full bg-primary/12'>
                   <Phone className='h-5 w-5 text-primary' />
@@ -49,28 +57,37 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className='font-medium'>Location</h4>
-                  <p className='text-muted-foreground hover:text-primary transition-colors'>
+                  <p className='text-muted-foreground'>
                     Lagos, Nigeria.
                   </p>
                 </div>
               </div>
             </div>
-
-            {/* <div className='pt-8'>
-              <h4 className='font-medium mb-4'>Connect With Me</h4>
-              <div className='flex space-x-4 justify-center'>
-                <a href="https://linkedin.com" target='_blank' rel='noopener noreferrer'>
-                  <Linkedin />
-                </a>
-                <a href="https://twitter.com" target='_blank' rel='noopener noreferrer'>
-                  <Twitter />
-                </a>
-                <a href="https://facebook.com" target='_blank' rel='noopener noreferrer'>
-                  <Facebook />
-                </a>
-              </div>
-            </div> */}
           </div>
+
+          <div >
+            <h3 className='text-2xl font-semibold mb-6'>Send a Message</h3>
+            <form onSubmit={onSubmit} className='space-y-4' >
+              <div>
+                <label className='block mb-1'>Your name</label>
+                <input type="text" name='name' placeholder='Enter your name' required maxLength={50} className='w-full p-2 border  border-primary rounded' />
+              </div>
+
+              <div>
+                <label className='block mb-1'>Phone Number</label>
+                <input type="tel" name='phone' placeholder='Enter your phone number' required maxLength={20} className='w-full p-2 border border-primary rounded' />
+              </div>
+
+              <div>
+                <label className='block mb-1'>Message</label>
+                <textarea name="message" rows="6" placeholder='Enter your message' required maxLength={500} className='w-full p-2 border border-primary rounded'></textarea>
+              </div>
+
+              <button type='submit' className='page-button w-fit flex items-center mx-auto gap-2'>Send Message</button>
+            </form>
+            <span className='block mt-4 text-primary-600'>{result}</span>
+          </div>
+
         </div>
       </div>
     </section>

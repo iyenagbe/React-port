@@ -211,5 +211,12 @@
   background-color: hsl(var(--primary));
 }
 
+@layer utilities {
+  .border-primary {
+    border-color: hsl(var(--primary));
+  }
+}
+
+
 
 }
