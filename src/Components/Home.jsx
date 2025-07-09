@@ -1,5 +1,5 @@
 import React from 'react'
-import StarBackground  from "./StarBackground"
+import StarBackground from "./StarBackground"
 import NavBar from './NavBar'
 import HeroSection from './HeroSection'
 import AboutMe from './AboutMe'
@@ -7,8 +7,7 @@ import Skills from './Skills'
 import MyProjects from './Projects'
 import Contact from './Contact'
 import Footer from './Footer'
-
-
+import Assets from '@/assets/hero.jpeg' 
 
 const Home = () => {
   return (
@@ -19,11 +18,12 @@ const Home = () => {
       <StarBackground />
 
       {/* NavBar */}
-      < NavBar />
+      <NavBar />
 
       {/* Main Content */}
       <main>
         <HeroSection />
+        {/* <img src={Assets} alt="Hero" />  */}
         <AboutMe />
         <Skills />
         <MyProjects />
