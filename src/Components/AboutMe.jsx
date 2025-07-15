@@ -14,17 +14,17 @@
             <div className='space-y-6'>
                 <h3 className='text-2xl font-semibold'>Passionate Web Developer & Digital Creator</h3>
                 <p className='text-muted-foreground'>
-                With a strong foundation in both front-end and back-end development, I thrive on turning complex problems <br />
-                into elegant solutions. My 2 years journey in the tech world has equipped me with a diverse skill set, <br /> 
-                allowing me to adapt and innovate in an ever-evolving landscape.
+                I’m a Full Stack Developer and Blockchain enthusiast driven by a passion for creating clean,  
+                elegant, and interactive digital solutions. Over the past 2 years of hands-on experience, I’ve 
+                combined modern design with advanced web technologies to build products that look stunning and feel seamless.
                 </p>
 
-                <p className='text-muted-foreground'>
+                {/* <p className='text-muted-foreground'>
                 I’m a Full Stack Developer and Blockchain enthusiast dedicated to crafting clean,
                 interactive, and impactful digital products. I blend modern design principles with cutting-edge
                 web technologies to create seamless user experiences that not only look beautiful
                 but also feel intuitive and engaging.
-                </p>
+                </p> */}
 
                <div className='flex flex-col sm:flex-row gap-5 pt-4 justify-center'>
                 <a href="" className='page-button'>

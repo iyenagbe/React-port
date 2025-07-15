@@ -1,27 +1,27 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
-import Assets from '@/assets/hero.jpeg';
+import Assets from '@/assets/hero2.jpeg';
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="grid grid-cols-1 md:grid-cols-2 min-h-screen items-center justify-center px-4 relative">
+    <section id="hero" className="grid grid-cols-1 md:grid-cols-2 min-h-screen items-center justify-center px-4 py-24 relative">
       {/* Text section */}
-      <div className="container max-w-3xl mx-auto text-center md:text-left ml-8">
-        <div className="space-y-6 ml-17">
+      <div className="container max-w-3xl mx-auto text-center md:text-left md:ml-8">
+        <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in">Hi, I'm</span>
-            <span className="ml-2 opacity-0 animate-fade-in-delay-1 bg-gradient-to-r from-pink-900 to-purple-900 text-transparent bg-clip-text">
+            <span className="block opacity-0 animate-fade-in">Hi, I'm</span>
+            <span className="block md:inline opacity-0 animate-fade-in-delay-1 bg-gradient-to-r from-pink-900 to-purple-900 text-transparent bg-clip-text">
               Iyenagbe. O.
             </span>
-            <span className="ml-2 opacity-0 animate-fade-in-delay-2 bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
+            <span className="block md:inline opacity-0 animate-fade-in-delay-2 bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
               Raymond
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I’m a skilled and passionate Full Stack web developer with experience <br /> in creating dynamic and responsive web applications.
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 opacity-0 animate-fade-in-delay-3">
+            I’m a skilled and passionate Full Stack web developer <br />  with experience in creating dynamic and responsive web applications.
           </p>
-          <div className="pt-4 opacity-0 animate-fade-in delay-4 ml-31">
+          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="page-button">
               View My work
             </a>
@@ -34,7 +34,7 @@ const HeroSection = () => {
         <img 
           src={Assets}
           alt="Hero"
-          className="rounded-full w-80 h-80 md:w-96 md:h-96 ml-25 border-4 border-primary object-cover shadow-lg"
+          className="rounded-full w-64 h-64 md:w-96 md:h-96 border-4 border-primary object-cover shadow-lg"
         />
       </div>
 

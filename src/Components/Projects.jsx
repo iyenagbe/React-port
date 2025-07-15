@@ -3,44 +3,43 @@ import React from 'react'
 
 const Projects = () => {
   
-    const projects = [
-    {
-        id: 1,
-        title: "Project One",
-        description: "A beautiful landing page with a Language Translator, using HTML/CSS and JavaScript",
-        image: '/',
-        tags: ['HTML/CSS', 'JavaScript', 'Memory API'],
-        demoUrl: '#',
-        githubUrl: '#'
-    },
-    
-    {
-        id: 3,
-        title: "Project Two",
-        description: "A fully functing weather site that tells a real-time weather update, using HTML/CSS and JavaScript.",
-        image: '/',
-        tags: ['HTML/CSS', 'JavaScript', 'My Weather API'],
-        demoUrl: '#',
-        githubUrl: '#'
-    },
-    {
-        id: 2,
-        title: "Project Three",
-        description: "A dynamic Edu website using React and Tailwind CSS.",
-        image: '/',
-        tags: ['React', 'Tailwind CSS'],
-        demoUrl: '#',
-        githubUrl: '#'
-    },
-    
+   const projects = [
+  {
+    id: 1,
+    title: "Project One",
+    description: "A beautiful landing page with a Language Translator, using HTML/CSS and JavaScript",
+    image: '/images/project3.png', // <-- Make sure you have this image or use placeholder
+    tags: ['HTML/CSS', 'JavaScript', 'Memory API'],
+    demoUrl: 'https://alxportfolioproject-esh112wz2.vercel.app/',
+    githubUrl: 'https://github.com/iyenagbe'
+  },
+  {
+    id: 2,
+    title: "Project Two",
+    description: "A fully functioning weather site that tells a real-time weather update, using HTML/CSS and JavaScript.",
+    image: '/images/project2.PNG',
+    tags: ['HTML/CSS', 'JavaScript', 'My Weather API'],
+    demoUrl: '',
+    githubUrl: 'https://skycast-gamma.vercel.app/' 
+  },
+  {
+    id: 3,
+    title: "Project Three",
+    description: "A dynamic Edu website using React and Tailwind CSS.",
+    image: '/images/project1.PNG',
+    tags: ['React', 'Tailwind CSS'],
+    demoUrl: 'https://edu-sity-tau.vercel.app/',
+    githubUrl: 'https://github.com/iyenagbe'
+  },
 ];
+
 
     return (
     <section id='projects' className='py-24 px-4 relative'>
         <div className='container mx-auto max-5xl'>
             <h2 className='text-3xl md:text-4xl font-bold mb-8 text-center'> 
                 {''}
-            Featured <span className='text-primary '> Projects </span></h2>
+            My <span className='text-primary '> Projects </span></h2>
 
             <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto'>
                 Here are some of my recent projects that showcase my skills and creativity. 
@@ -50,11 +49,11 @@ const Projects = () => {
                 {projects.map((project, key) => (
                     <div key={project.id} className='bg-card rounded-lg shadow-xs overflow-hidden card-hover'>
 
-                        <div className='h-45 overflow-hidden'>
+                        <div className='h-44 overflow-hidden'>
                             <img 
                             src={project.image}
                             alt={project.title}
-                        className='w-full h-full object--cover transition-transform duration-400 group-hover:scale-110'
+                        className='w-full h-full object-cover transition-transform duration-400 group-hover:scale-110'
                         />
                         </div>
             <div className='p-6'>
