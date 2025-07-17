@@ -8,7 +8,7 @@ const Projects = () => {
     id: 1,
     title: "Project One",
     description: "A beautiful landing page with a Language Translator, using HTML/CSS and JavaScript",
-    image: '/images/project3.png', // <-- Make sure you have this image or use placeholder
+    image: '/images/project3.png', 
     tags: ['HTML/CSS', 'JavaScript', 'Memory API'],
     demoUrl: 'https://alxportfolioproject-esh112wz2.vercel.app/',
     githubUrl: 'https://github.com/iyenagbe'
@@ -19,8 +19,8 @@ const Projects = () => {
     description: "A fully functioning weather site that tells a real-time weather update, using HTML/CSS and JavaScript.",
     image: '/images/project2.PNG',
     tags: ['HTML/CSS', 'JavaScript', 'My Weather API'],
-    demoUrl: '',
-    githubUrl: 'https://skycast-gamma.vercel.app/' 
+    demoUrl: 'https://skycast-gamma.vercel.app/',
+    githubUrl: 'https://github.com/iyenagbe' 
   },
   {
     id: 3,
