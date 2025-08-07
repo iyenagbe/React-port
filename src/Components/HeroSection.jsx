@@ -11,10 +11,9 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="block opacity-0 animate-fade-in">Hi, I'm</span>
             <span className="block md:inline opacity-0 animate-fade-in-delay-1 bg-gradient-to-r from-pink-900 to-purple-900 text-transparent bg-clip-text">
-              Iyenagbe. O.
+              Iyenagbe O. 
             </span>
-            <span className="block md:inline opacity-0 animate-fade-in-delay-2 bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
-              Raymond
+            <span className="block md:inline opacity-0 animate-fade-in-delay-2 bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text"> Raymond
             </span>
           </h1>
 
