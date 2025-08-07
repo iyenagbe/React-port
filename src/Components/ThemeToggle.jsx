@@ -1,6 +1,6 @@
 import React from "react";
 import { Sun, Moon } from "lucide-react";
-import { cn } from "@Lib/Utils";
+import { cn } from "@Lib/utils";
 
 const getInitialTheme = () => {
   if (typeof window !== "undefined" && window.localStorage) {
