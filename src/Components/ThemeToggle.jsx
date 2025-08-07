@@ -1,6 +1,6 @@
 import React from "react";
 import { Sun, Moon } from "lucide-react";
-import { cn } from '@/lib/utils';
+import { cn } from '@/Lib/utils';
 
 
 const getInitialTheme = () => {
