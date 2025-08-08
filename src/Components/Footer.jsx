@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-background py-10 border-t border-primary mt-20">
       <div className="container mx-auto max-w-5xl text-center">
-        <h3 className="text-2xl font-bold mb-4">Connect With <span className='text-primary'>RayTechHub</span></h3>
+        <h3 className="text-2xl font-bold mb-4">Connect with <span className='text-primary'>RayTechHub</span></h3>
         <p className="text-muted-foreground mb-6">
           Have a project or just want to say hi? My inbox is always open!
         </p>
