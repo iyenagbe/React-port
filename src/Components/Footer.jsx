@@ -12,7 +12,7 @@ const Footer = () => {
 
         <div className="flex justify-center gap-4 mb-6">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/share/1FGbCoVjfL/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors"
@@ -20,7 +20,7 @@ const Footer = () => {
             <Facebook className="w-5 h-5" />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/cooperguy26?t=v07GRLeu-1n12rf6fVaV0g&s=09"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors"
@@ -28,7 +28,7 @@ const Footer = () => {
             <Twitter className="w-5 h-5" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/iyenagbe-raymond-27573b237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors"
